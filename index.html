@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções de Jogos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        #lista-jogos .jogo {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            text-align: left;
+        }
+        #lista-jogos img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+        .navegacao {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #mensagem {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Busque um JOGO em Promoção</h1>
+    <form id="form-busca">
+        <label for="campo-busca">Digite o nome do jogo:</label>
+        <input type="text" id="campo-busca" name="campo-busca" aria-label="Campo de busca">
+        <button type="submit">Pesquisar</button>
+    </form>
+    
+    <p id="mensagem"></p>
+    <div id="lista-jogos"></div>
+
+    <div class="navegacao">
+        <button id="botao-anterior">Anterior</button>
+        <button id="botao-proximo">Próximo</button>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+
+</body>
+</html>
