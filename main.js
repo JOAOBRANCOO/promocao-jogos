@@ -55,7 +55,7 @@ function exibirJogos(origem, jogos) {
         return;
     }
 
-    mensagem.textContent = `Fonte dos dados: ${origem === 'cache' ? '💾 Cache' : '🌐 API'}`;
+    mensagem.textContent = `Fonte dos dados: ${origem === 'cache' ? 'Cache' : 'API'}`;
 
     const inicio = (paginaAtual - 1) * itensPorPagina;
     const fim = inicio + itensPorPagina;
